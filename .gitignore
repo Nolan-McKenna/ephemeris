@@ -1,0 +1,22 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+Thumbtacks.db
+desktop.ini
+
+# Vercel & Local IDEs
+.vercel/
+.vscode/
+.idea/
