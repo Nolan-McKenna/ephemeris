@@ -6,16 +6,12 @@ A minimal Flask-based demo for your VC presentation showing satellite collision 
 
 ### 1. Install dependencies
 ```bash
-pip install flask requests
+pip install -r requirements.txt
 ```
-*(numpy is optional but helps — only stdlib + flask + requests required)*
 
-### 2. Get Space-Track credentials
-Register at [space-track.org](https://www.space-track.org/auth/createAccount) (free).
-
-### 3. Run
+### 2. Run
 ```bash
-cd ephemeris_demo
+cd ephemeris
 python app.py
 ```
 Then open **http://localhost:5050**
@@ -45,7 +41,7 @@ Then open **http://localhost:5050**
 ## Files
 
 - `app.py` — Flask server + API routes
-- `sgp4_lite.py` — Pure Python SGP4 orbit propagator (no external deps)
+- `sgp4_propagate.py` — Pure Python SGP4 orbit propagator (no external deps)
 
 ## Architecture
 
@@ -54,7 +50,7 @@ Browser (CesiumJS globe)
     ↕ REST API
 Flask Server (app.py)
     ↕ HTTPS
-Space-Track.org (TLE data)
+Celestrak.org (TLE data)
 ```
 
 ## Notes
